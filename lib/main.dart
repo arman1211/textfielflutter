@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 
 void main() {
   runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
+    debugShowCheckedModeBanner: true,
     theme: ThemeData(
       brightness: Brightness.dark,
     ),
