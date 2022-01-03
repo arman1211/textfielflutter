@@ -52,7 +52,7 @@ class SignUpPage extends StatelessWidget {
               textInputAction: TextInputAction.next,
               obscureText: true,
               keyboardType: TextInputType.text,
-              decoration: InputDecoration(border: OutlineInputBorder(borderRadius: BorderRadius.circular(12.0)), labelText: 'Password', hintText: 'Password must be eight digit..', suffix: Icon(Icons.face)),
+              decoration: InputDecoration(border: OutlineInputBorder(borderRadius: BorderRadius.circular(12.0)), labelText: 'Password', hintText: 'Password must be eight digit..', suffix: Icon(Icons.remove_red_eye_rounded)),
             ),
           ),
           Padding(
