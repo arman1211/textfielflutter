@@ -20,7 +20,7 @@ class SignUpPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Icon(
-            Icons.emoji_emotions,
+            Icons.add_to_home_screen_sharp,
             size: 100,
           ),
           Padding(
