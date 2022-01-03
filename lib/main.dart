@@ -3,9 +3,9 @@ import 'package:flutter/cupertino.dart';
 
 void main() {
   runApp(MaterialApp(
-    debugShowCheckedModeBanner: true,
+    debugShowCheckedModeBanner: false,
     theme: ThemeData(
-      brightness: Brightness.dark,
+      brightness: Brightness.light,
     ),
     home: SignUpPage(),
   ));
