@@ -20,7 +20,7 @@ class SignUpPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Icon(
-            Icons.add_to_home_screen_sharp,
+            Icons.emoji_emotions,
             size: 100,
           ),
           Padding(
@@ -40,7 +40,7 @@ class SignUpPage extends StatelessWidget {
                   border: OutlineInputBorder(borderRadius: BorderRadius.circular(12.0)),
                   labelText: 'Email',
                   hintText: 'Enter you email address..',
-                  suffix: Icon(
+                  prefix: Icon(
                     Icons.email,
                     color: Colors.black,
                   )),
