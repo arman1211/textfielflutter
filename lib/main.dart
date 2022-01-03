@@ -40,9 +40,8 @@ class SignUpPage extends StatelessWidget {
                   border: OutlineInputBorder(borderRadius: BorderRadius.circular(12.0)),
                   labelText: 'Email',
                   hintText: 'Enter you email address..',
-                  prefix: Icon(
+                  suffix: Icon(
                     Icons.email,
-                    color: Colors.black,
                   )),
             ),
           ),
