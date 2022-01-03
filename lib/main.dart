@@ -5,7 +5,7 @@ void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     theme: ThemeData(
-      brightness: Brightness.dark,
+      brightness: Brightness.light,
     ),
     home: SignUpPage(),
   ));
