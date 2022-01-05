@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 void main() {
-  runApp(
+  runApp( Matarialapp
     debugShowCheckedModeBanner: false,
     home: SignUpPage(),
   ));
