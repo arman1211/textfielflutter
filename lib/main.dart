@@ -21,6 +21,7 @@ class _State extends State<SignUpPage> {
 
   var messageCon = TextEditingController();
   String data = '';
+  String selectedData = '';
 
   @override
   Widget build(BuildContext context) {
@@ -81,6 +82,37 @@ class _State extends State<SignUpPage> {
           ),
           SizedBox(
             height: 10,
+          ),
+          Text('Select Your Gender'),
+          RadioListTile(
+            title: Text('Male'),
+            value: 'Male',
+            groupValue: selectedData,
+            onChanged: (value) {
+              setState(() {
+                selectedData = value.toString();
+              });
+            },
+          ),
+          RadioListTile(
+            title: Text('Female'),
+            value: 'Female',
+            groupValue: selectedData,
+            onChanged: (value) {
+              setState(() {
+                selectedData = value.toString();
+              });
+            },
+          ),
+          RadioListTile(
+            title: Text('Others'),
+            value: 'Others',
+            groupValue: selectedData,
+            onChanged: (value) {
+              setState(() {
+                selectedData = value.toString();
+              });
+            },
           ),
           Container(
             margin: EdgeInsets.all(5),
