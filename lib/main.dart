@@ -6,7 +6,8 @@ void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     home: SignUpPage(),
-    theme: ThemeData(backgroundColor: Colors.black),
+    theme: light ? _lightTheme : _darkTheme,
+              title: 'Material App',
   ));
 }
 
@@ -32,6 +33,13 @@ class _State extends State<SignUpPage> {
           mainAxisAlignment: MainAxisAlignment.end,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+             Switch(
+                  value: _light, 
+                  onChanged: (toggle){
+                    setState(() {
+                      _light = toggle;
+                    });
+                  })
             Text(data),
             Icon(
               Icons.emoji_emotions,
