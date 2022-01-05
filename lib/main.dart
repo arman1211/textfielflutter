@@ -71,10 +71,9 @@ class SignUpPage extends StatelessWidget {
             margin: EdgeInsets.all(5),
             height: 40,
             width: double.infinity,
-            child: TextButton(
-              onLongPress: () {},
+            child: IconButton(
+              icon: Icon(Icons.add),
               onPressed: () {},
-              child: Text('Submit'),
             ),
           )
         ],
