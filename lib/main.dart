@@ -19,6 +19,7 @@ class SignUpPage extends StatelessWidget {
   var passCon = TextEditingController();
 
   var messageCon = TextEditingController();
+  String data = '';
 
   @override
   Widget build(BuildContext context) {
@@ -27,6 +28,7 @@ class SignUpPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.end,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
+          Text(data),
           Icon(
             Icons.emoji_emotions,
             size: 100,
@@ -87,7 +89,7 @@ class SignUpPage extends StatelessWidget {
               onPressed: () {
                 if (nameCon.text.isEmpty || emailCon.text.isEmpty || passCon.text.isEmpty || messageCon.text.isEmpty) {
                   Fluttertoast.showToast(msg: "All Fields are required", toastLength: Toast.LENGTH_SHORT, gravity: ToastGravity.CENTER, timeInSecForIosWeb: 1, backgroundColor: Colors.red, textColor: Colors.white, fontSize: 16.0);
-                }
+                } else {}
               },
               child: Text('Submit'),
             ),
