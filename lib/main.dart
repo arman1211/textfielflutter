@@ -9,7 +9,11 @@ void main() {
   ));
 }
 
-class SignUpPage extends StatelessWidget {
+class SignUpPage extends StatefulWidget {
+  _State createState() => _State();
+}
+
+class _State extends State<SignUpPage> {
   var nameCon = TextEditingController();
   var emailCon = TextEditingController();
 
@@ -25,7 +29,7 @@ class SignUpPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.end,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Text("data"),
+          Text(data),
           Icon(
             Icons.emoji_emotions,
             size: 100,
@@ -87,7 +91,9 @@ class SignUpPage extends StatelessWidget {
                 if (nameCon.text.isEmpty || emailCon.text.isEmpty || passCon.text.isEmpty || messageCon.text.isEmpty) {
                   Fluttertoast.showToast(msg: "All Fields are required", toastLength: Toast.LENGTH_SHORT, gravity: ToastGravity.CENTER, timeInSecForIosWeb: 1, backgroundColor: Colors.red, textColor: Colors.white, fontSize: 16.0);
                 } else {
-                  data = nameCon.text;
+                  setState(() {
+                    data = nameCon.text;
+                  });
                 }
               },
               child: Text('Submit'),
