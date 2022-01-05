@@ -3,9 +3,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 void main() {
-  runApp( Matarialapp
+  runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     home: SignUpPage(),
+    theme: ThemeData(backgroundColor: Colors.black),
   ));
 }
 
