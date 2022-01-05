@@ -12,6 +12,13 @@ void main() {
 }
 
 class SignUpPage extends StatelessWidget {
+  var nameCon = TextEditingController();
+  var emailCon = TextEditingController();
+
+  var passCon = TextEditingController();
+
+  var messageCon = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,6 +33,7 @@ class SignUpPage extends StatelessWidget {
           Padding(
             padding: EdgeInsets.all(10),
             child: TextField(
+              controller: nameCon,
               textInputAction: TextInputAction.next,
               keyboardType: TextInputType.name,
               decoration: InputDecoration(border: OutlineInputBorder(borderRadius: BorderRadius.circular(12.0)), labelText: 'Full Name', hintText: 'Enter you full name..'),
@@ -34,6 +42,7 @@ class SignUpPage extends StatelessWidget {
           Padding(
             padding: EdgeInsets.all(10),
             child: TextField(
+              controller: emailCon,
               textInputAction: TextInputAction.next,
               keyboardType: TextInputType.emailAddress,
               decoration: InputDecoration(
@@ -48,6 +57,7 @@ class SignUpPage extends StatelessWidget {
           Padding(
             padding: EdgeInsets.all(10),
             child: TextField(
+              controller: passCon,
               textInputAction: TextInputAction.next,
               obscureText: true,
               keyboardType: TextInputType.text,
@@ -57,6 +67,7 @@ class SignUpPage extends StatelessWidget {
           Padding(
             padding: EdgeInsets.all(10),
             child: TextField(
+              controller: messageCon,
               minLines: 4,
               maxLines: 7,
               textInputAction: TextInputAction.done,
@@ -72,8 +83,11 @@ class SignUpPage extends StatelessWidget {
             height: 40,
             width: double.infinity,
             child: ElevatedButton(
-              onLongPress: () {},
-              onPressed: () {},
+              onPressed: () {
+                if (nameCon.text.isEmpty || emailCon.text.isEmpty || passCon.text.isEmpty || messageCon.text.isEmpty) {
+                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('can work')));
+                }
+              },
               child: Text('Submit'),
             ),
           )
