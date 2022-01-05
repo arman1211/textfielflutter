@@ -26,112 +26,114 @@ class _State extends State<SignUpPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.end,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Text(data),
-          Icon(
-            Icons.emoji_emotions,
-            size: 100,
-          ),
-          Padding(
-            padding: EdgeInsets.all(10),
-            child: TextField(
-              controller: nameCon,
-              textInputAction: TextInputAction.next,
-              keyboardType: TextInputType.name,
-              decoration: InputDecoration(border: OutlineInputBorder(borderRadius: BorderRadius.circular(12.0)), labelText: 'Full Name', hintText: 'Enter you full name..'),
+      body: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text(data),
+            Icon(
+              Icons.emoji_emotions,
+              size: 100,
             ),
-          ),
-          Padding(
-            padding: EdgeInsets.all(10),
-            child: TextField(
-              controller: emailCon,
-              textInputAction: TextInputAction.next,
-              keyboardType: TextInputType.emailAddress,
-              decoration: InputDecoration(
-                  border: OutlineInputBorder(borderRadius: BorderRadius.circular(12.0)),
-                  labelText: 'Email',
-                  hintText: 'Enter you email address..',
-                  suffix: Icon(
-                    Icons.email,
-                  )),
+            Padding(
+              padding: EdgeInsets.all(10),
+              child: TextField(
+                controller: nameCon,
+                textInputAction: TextInputAction.next,
+                keyboardType: TextInputType.name,
+                decoration: InputDecoration(border: OutlineInputBorder(borderRadius: BorderRadius.circular(12.0)), labelText: 'Full Name', hintText: 'Enter you full name..'),
+              ),
             ),
-          ),
-          Padding(
-            padding: EdgeInsets.all(10),
-            child: TextField(
-              controller: passCon,
-              textInputAction: TextInputAction.next,
-              obscureText: true,
-              keyboardType: TextInputType.text,
-              decoration: InputDecoration(border: OutlineInputBorder(borderRadius: BorderRadius.circular(12.0)), labelText: 'Password', hintText: 'Password must be eight digit..', suffix: Icon(Icons.remove_red_eye_rounded)),
+            Padding(
+              padding: EdgeInsets.all(10),
+              child: TextField(
+                controller: emailCon,
+                textInputAction: TextInputAction.next,
+                keyboardType: TextInputType.emailAddress,
+                decoration: InputDecoration(
+                    border: OutlineInputBorder(borderRadius: BorderRadius.circular(12.0)),
+                    labelText: 'Email',
+                    hintText: 'Enter you email address..',
+                    suffix: Icon(
+                      Icons.email,
+                    )),
+              ),
             ),
-          ),
-          Padding(
-            padding: EdgeInsets.all(10),
-            child: TextField(
-              controller: messageCon,
-              minLines: 4,
-              maxLines: 7,
-              textInputAction: TextInputAction.done,
-              keyboardType: TextInputType.text,
-              decoration: InputDecoration(border: OutlineInputBorder(borderRadius: BorderRadius.circular(12.0)), hintText: 'Whats on your mind'),
+            Padding(
+              padding: EdgeInsets.all(10),
+              child: TextField(
+                controller: passCon,
+                textInputAction: TextInputAction.next,
+                obscureText: true,
+                keyboardType: TextInputType.text,
+                decoration: InputDecoration(border: OutlineInputBorder(borderRadius: BorderRadius.circular(12.0)), labelText: 'Password', hintText: 'Password must be eight digit..', suffix: Icon(Icons.remove_red_eye_rounded)),
+              ),
             ),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          Text('Select Your Gender'),
-          RadioListTile(
-            title: Text('Male'),
-            value: 'Male',
-            groupValue: selectedData,
-            onChanged: (value) {
-              setState(() {
-                selectedData = value.toString();
-              });
-            },
-          ),
-          RadioListTile(
-            title: Text('Female'),
-            value: 'Female',
-            groupValue: selectedData,
-            onChanged: (value) {
-              setState(() {
-                selectedData = value.toString();
-              });
-            },
-          ),
-          RadioListTile(
-            title: Text('Others'),
-            value: 'Others',
-            groupValue: selectedData,
-            onChanged: (value) {
-              setState(() {
-                selectedData = value.toString();
-              });
-            },
-          ),
-          Container(
-            margin: EdgeInsets.all(5),
-            height: 40,
-            width: double.infinity,
-            child: ElevatedButton(
-              onPressed: () {
-                if (nameCon.text.isEmpty || emailCon.text.isEmpty || passCon.text.isEmpty || messageCon.text.isEmpty) {
-                  Fluttertoast.showToast(msg: "All Fields are required", toastLength: Toast.LENGTH_SHORT, gravity: ToastGravity.CENTER, timeInSecForIosWeb: 1, backgroundColor: Colors.red, textColor: Colors.white, fontSize: 16.0);
-                } else {
-                  setState(() {
-                    data = nameCon.text + "\n" + emailCon.text + passCon.text + messageCon.text;
-                  });
-                }
+            Padding(
+              padding: EdgeInsets.all(10),
+              child: TextField(
+                controller: messageCon,
+                minLines: 4,
+                maxLines: 7,
+                textInputAction: TextInputAction.done,
+                keyboardType: TextInputType.text,
+                decoration: InputDecoration(border: OutlineInputBorder(borderRadius: BorderRadius.circular(12.0)), hintText: 'Whats on your mind'),
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Text('Select Your Gender'),
+            RadioListTile(
+              title: Text('Male'),
+              value: 'Male',
+              groupValue: selectedData,
+              onChanged: (value) {
+                setState(() {
+                  selectedData = value.toString();
+                });
               },
-              child: Text('Submit'),
             ),
-          )
-        ],
+            RadioListTile(
+              title: Text('Female'),
+              value: 'Female',
+              groupValue: selectedData,
+              onChanged: (value) {
+                setState(() {
+                  selectedData = value.toString();
+                });
+              },
+            ),
+            RadioListTile(
+              title: Text('Others'),
+              value: 'Others',
+              groupValue: selectedData,
+              onChanged: (value) {
+                setState(() {
+                  selectedData = value.toString();
+                });
+              },
+            ),
+            Container(
+              margin: EdgeInsets.all(5),
+              height: 40,
+              width: double.infinity,
+              child: ElevatedButton(
+                onPressed: () {
+                  if (nameCon.text.isEmpty || emailCon.text.isEmpty || passCon.text.isEmpty || messageCon.text.isEmpty) {
+                    Fluttertoast.showToast(msg: "All Fields are required", toastLength: Toast.LENGTH_SHORT, gravity: ToastGravity.CENTER, timeInSecForIosWeb: 1, backgroundColor: Colors.red, textColor: Colors.white, fontSize: 16.0);
+                  } else {
+                    setState(() {
+                      data = nameCon.text + "\n" + emailCon.text + passCon.text + messageCon.text;
+                    });
+                  }
+                },
+                child: Text('Submit'),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
