@@ -25,7 +25,7 @@ class SignUpPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.end,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Text(data),
+          Text("data"),
           Icon(
             Icons.emoji_emotions,
             size: 100,
