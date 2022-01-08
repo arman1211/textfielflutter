@@ -40,7 +40,9 @@ class HomePage extends StatelessWidget {
                     height: 150,
                     width: double.infinity,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context) => SecondPage()));
+                      },
                       child: Text('Go Next'),
                     ),
                   )
