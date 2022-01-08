@@ -47,6 +47,14 @@ class HomePage extends StatelessWidget {
                           child: Container(
                             height: 150,
                             color: Colors.red,
+                            child: Column(
+                              children: [
+                                Expanded(
+                                  flex: 3,
+                                  child: Image.network('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg'),
+                                )
+                              ],
+                            ),
                           ),
                         ),
                         Expanded(
