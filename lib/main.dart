@@ -5,15 +5,42 @@ import 'package:fluttertoast/fluttertoast.dart';
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: SignUpPage(),
-    theme: light ? _lightTheme : _darkTheme,
-              title: 'Material App',
+    home: HomePage(),
   ));
 }
 
-class SignUpPage extends StatefulWidget {
-  _State createState() => _State();
+class HomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.blue,
+      appBar: AppBar(
+        title: Text('title'),
+        backgroundColor: Colors.blue,
+      ),
+      body: Column(
+        children: [
+          Column(
+            children: [
+              SizedBox(
+                height: 100,
+              )
+            ],
+          ),
+          Expanded(
+            child: Container(
+              decoration: BoxDecoration(borderRadius: BorderRadius.only(topLeft: Radius.circular(50), topRight: Radius.circular(50)), color: Colors.white),
+            ),
+          )
+        ],
+      ),
+    );
+  }
 }
+
+/*class SignUpPage extends StatefulWidget {
+  _State createState() => _State();
+}//
 
 class _State extends State<SignUpPage> {
   var nameCon = TextEditingController();
@@ -147,3 +174,4 @@ class _State extends State<SignUpPage> {
     );
   }
 }
+*/
