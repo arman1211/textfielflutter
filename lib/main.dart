@@ -36,7 +36,7 @@ class HomePage extends StatelessWidget {
               child: ListView(
                 children: [
                   Container(
-                    margin: EdgeInsets.all(10),
+                    margin: EdgeInsets.all(20),
                     height: 150,
                     width: double.infinity,
                     color: Colors.teal,
