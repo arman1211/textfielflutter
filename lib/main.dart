@@ -35,18 +35,12 @@ class HomePage extends StatelessWidget {
           ),
           Expanded(
             child: Container(
+              padding: EdgeInsets.only(top: 8, left: 16, right: 16, bottom: 8),
               child: ListView(
                 children: [
                   Container(
-                    margin: EdgeInsets.all(20),
                     height: 150,
-                    width: double.infinity,
-                    child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.of(context).push(MaterialPageRoute(builder: (context) => SecondPage()));
-                      },
-                      child: Text('Go Next'),
-                    ),
+                    color: Colors.blue,
                   )
                 ],
               ),
