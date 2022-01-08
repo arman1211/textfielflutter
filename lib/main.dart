@@ -25,7 +25,10 @@ class HomePage extends StatelessWidget {
               SizedBox(
                 height: 35,
               ),
-              Text('Hello Doctors!')
+              Text('Hello Doctors!'),
+              SizedBox(
+                height: 35,
+              ),
             ],
           ),
           Expanded(
