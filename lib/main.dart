@@ -33,6 +33,15 @@ class HomePage extends StatelessWidget {
           ),
           Expanded(
             child: Container(
+              child: ListView(
+                children: [
+                  Container(
+                    height: 150,
+                    width: double.infinity,
+                    color: Colors.teal,
+                  )
+                ],
+              ),
               decoration: BoxDecoration(borderRadius: BorderRadius.only(topLeft: Radius.circular(50), topRight: Radius.circular(50)), color: Colors.white),
             ),
           )
