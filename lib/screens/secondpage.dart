@@ -14,7 +14,7 @@ class _SecondPageState extends State<SecondPage> {
         title: Text('title'),
       ),
       body: Center(
-          child: GestureDetector(
+          child: InkWell(
         onTap: () {
           Navigator.of(context).pop();
         },
