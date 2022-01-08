@@ -65,7 +65,10 @@ class HomePage extends StatelessWidget {
                                   flex: 1,
                                   child: TextButton(
                                     onPressed: () {},
-                                    child: Text('Bangladesh'),
+                                    child: Text(
+                                      'Bangladesh',
+                                      style: TextStyle(fontSize: 25),
+                                    ),
                                   ),
                                 )
                               ],
