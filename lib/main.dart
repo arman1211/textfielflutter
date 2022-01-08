@@ -51,7 +51,12 @@ class HomePage extends StatelessWidget {
                               children: [
                                 Expanded(
                                   flex: 3,
-                                  child: Image.network('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg'),
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.only(
+                                      bottomLeft: Radius.circular(32),
+                                      bottomRight: Radius.circular(32),
+                                    ),
+                                  ),
                                 ),
                                 Expanded(
                                   flex: 1,
