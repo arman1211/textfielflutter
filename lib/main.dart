@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
+import 'screens/secondpage.dart';
+
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
