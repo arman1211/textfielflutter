@@ -56,6 +56,7 @@ class HomePage extends StatelessWidget {
                                       bottomLeft: Radius.circular(32),
                                       bottomRight: Radius.circular(32),
                                     ),
+                                    child: Image.network('https://i2.wp.com/dhakacity.com.bd/wp-content/uploads/2021/12/patenga-sea-beach-picture.jpg?w=1000&ssl=1'),
                                   ),
                                 ),
                                 Expanded(
