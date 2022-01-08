@@ -43,7 +43,7 @@ class HomePage extends StatelessWidget {
                     child: Row(
                       children: [
                         Expanded(
-                          flex: 2,
+                          flex: 1,
                           child: Container(
                             height: 150,
                             color: Colors.red,
