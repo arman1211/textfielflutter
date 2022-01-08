@@ -14,10 +14,14 @@ class _SecondPageState extends State<SecondPage> {
         title: Text('title'),
       ),
       body: Center(
+          child: GestureDetector(
+        onTap: () {
+          Navigator.of(context).pop();
+        },
         child: Text(
           'Text',
         ),
-      ),
+      )),
     );
   }
 }
