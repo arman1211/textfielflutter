@@ -39,7 +39,10 @@ class HomePage extends StatelessWidget {
                     margin: EdgeInsets.all(20),
                     height: 150,
                     width: double.infinity,
-                    color: Colors.teal,
+                    child: ElevatedButton(
+                      onPressed: () {},
+                      child: Text('Go Next'),
+                    ),
                   )
                 ],
               ),
