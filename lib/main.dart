@@ -33,6 +33,25 @@ class HomePage extends StatelessWidget {
                       style: TextStyle(fontSize: 25, color: Colors.black, fontWeight: FontWeight.w800),
                     )
                   ],
+                ),
+                Expanded(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      Text(
+                        'Hotel Name',
+                        style: TextStyle(fontSize: 25, color: Colors.black, fontWeight: FontWeight.w800),
+                      ),
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Text(
+                        'Location',
+                        style: TextStyle(fontSize: 20, color: Colors.black, fontWeight: FontWeight.w800),
+                      ),
+                    ],
+                  ),
                 )
               ],
             ),
