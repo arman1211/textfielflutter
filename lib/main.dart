@@ -44,7 +44,7 @@ class HomePage extends StatelessWidget {
                       Opacity(
                         opacity: 0.5,
                         child: Container(
-                          color: Colors.grey,
+                          color: Colors.black,
                           height: 70,
                           width: double.infinity,
                           child: Column(
