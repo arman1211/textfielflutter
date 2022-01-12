@@ -29,7 +29,7 @@ class HomePage extends StatelessWidget {
                     ),
                     Text(
                       'Price',
-                      style: TextStyle(fontSize: 25, color: Colors.black),
+                      style: TextStyle(fontSize: 25, color: Colors.black, fontWeight: FontWeight.w800),
                     )
                   ],
                 )
