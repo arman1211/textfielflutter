@@ -32,7 +32,7 @@ class HomePage extends StatelessWidget {
                     ),
                     Text(
                       '1200' + dollarsign,
-                      style: TextStyle(fontSize: 25, color: Colors.black, fontWeight: FontWeight.w800),
+                      style: TextStyle(fontSize: 25, color: Colors.white, fontWeight: FontWeight.w800),
                     )
                   ],
                 ),
@@ -43,7 +43,7 @@ class HomePage extends StatelessWidget {
                     children: [
                       Text(
                         'Hotel Name',
-                        style: TextStyle(fontSize: 25, color: Colors.black, fontWeight: FontWeight.w800),
+                        style: TextStyle(fontSize: 25, color: Colors.white, fontWeight: FontWeight.w800),
                       ),
                       SizedBox(
                         height: 5,
