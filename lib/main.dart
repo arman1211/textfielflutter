@@ -45,6 +45,8 @@ class HomePage extends StatelessWidget {
                         height: 70,
                         width: double.infinity,
                         child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
                               'Hotel Name',
