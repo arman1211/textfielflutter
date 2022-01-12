@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'widgets/customContainer.dart';
+
 void main() {
   runApp(MaterialApp(debugShowCheckedModeBanner: false, home: HomePage()));
 }
@@ -11,7 +13,9 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       body: ListView(
-        children: [],
+        children: [
+          customContainer(),
+        ],
       ),
     );
   }
