@@ -15,6 +15,19 @@ class HomePage extends StatelessWidget {
           Container(
             height: 150,
             width: 150,
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    for (var i = 0; i < 4; i++)
+                      Icon(
+                        Icons.star_border,
+                        color: Colors.yellow,
+                      )
+                  ],
+                )
+              ],
+            ),
             decoration: BoxDecoration(
                 image: DecorationImage(
                     image: NetworkImage(
