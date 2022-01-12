@@ -17,6 +17,8 @@ class HomePage extends StatelessWidget {
             height: 150,
             width: 150,
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
                   children: [
