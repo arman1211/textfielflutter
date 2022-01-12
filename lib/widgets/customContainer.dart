@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-Widget customContainer() {
+Widget customContainer(String name, location, int price, rating) {
   String dollarsign = r"$";
   return Container(
     height: 150,
@@ -11,7 +11,7 @@ Widget customContainer() {
       children: [
         Row(
           children: [
-            for (var i = 0; i < 4; i++)
+            for (var i = 0; i < rating; i++)
               Icon(
                 Icons.star_border,
                 color: Colors.yellow,
@@ -20,7 +20,7 @@ Widget customContainer() {
               width: 100,
             ),
             Text(
-              '1200' + dollarsign,
+              '$price' + dollarsign,
               style: TextStyle(fontSize: 25, color: Colors.black, fontWeight: FontWeight.w800),
             )
           ],
@@ -41,14 +41,14 @@ Widget customContainer() {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Hotel Name',
+                        name,
                         style: TextStyle(fontSize: 25, color: Colors.white, fontWeight: FontWeight.w800),
                       ),
                       SizedBox(
                         height: 5,
                       ),
                       Text(
-                        'Location',
+                        location,
                         style: TextStyle(fontSize: 20, color: Colors.white, fontWeight: FontWeight.w800),
                       ),
                     ],
