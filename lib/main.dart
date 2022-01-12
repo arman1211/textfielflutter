@@ -15,6 +15,7 @@ class HomePage extends StatelessWidget {
       body: ListView(
         children: [
           customContainer('Dhaka City', 'Dhaka', 700, 5),
+          customContainer('CTG City', 'CTG', 500, 4),
         ],
       ),
     );
