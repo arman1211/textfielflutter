@@ -14,8 +14,8 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(),
       body: ListView(
         children: [
-          customContainer('Dhaka City', 'Dhaka', 700, 5),
-          customContainer('CTG City', 'CTG', 500, 4),
+          customContainer('https://www.hospitalitynet.org/picture/xxl_153110032.jpg?t=20200106170828', 'Dhaka City', 'Dhaka', 700, 5),
+          customContainer('https://media.radissonhotels.net/image/radisson-blu-chattogram-bay-view/exteriorview/16256-116439-f64873197_3xl.jpg', 'CTG City', 'CTG', 500, 4),
         ],
       ),
     );

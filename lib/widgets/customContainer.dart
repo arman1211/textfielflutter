@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-Widget customContainer(String name, location, int price, rating) {
+Widget customContainer(String image, name, location, int price, rating) {
   String dollarsign = r"$";
   return Container(
     height: 150,
@@ -63,7 +63,7 @@ Widget customContainer(String name, location, int price, rating) {
     decoration: BoxDecoration(
         image: DecorationImage(
             image: NetworkImage(
-              'https://www.princehotels.com/wp-content/uploads/2019/04/aboutslider2-1.jpg',
+              image,
             ),
             fit: BoxFit.cover,
             scale: 2.0)),
