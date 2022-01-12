@@ -42,7 +42,7 @@ class HomePage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        height: 50,
+                        height: 60,
                         width: double.infinity,
                         child: Column(
                           children: [
