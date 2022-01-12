@@ -25,7 +25,7 @@ class HomePage extends StatelessWidget {
                         color: Colors.yellow,
                       ),
                     SizedBox(
-                      width: 50,
+                      width: 100,
                     ),
                     Text(
                       'Price',
