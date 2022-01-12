@@ -60,7 +60,7 @@ class HomePage extends StatelessWidget {
                               ),
                               Text(
                                 'Location',
-                                style: TextStyle(fontSize: 20, color: Colors.yellow, fontWeight: FontWeight.w800),
+                                style: TextStyle(fontSize: 20, color: Colors.white, fontWeight: FontWeight.w800),
                               ),
                             ],
                           ),
