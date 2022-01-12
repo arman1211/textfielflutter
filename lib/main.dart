@@ -23,7 +23,14 @@ class HomePage extends StatelessWidget {
                       Icon(
                         Icons.star_border,
                         color: Colors.yellow,
-                      )
+                      ),
+                    SizedBox(
+                      width: 50,
+                    ),
+                    Text(
+                      'Price',
+                      style: TextStyle(fontSize: 25, color: Colors.white),
+                    )
                   ],
                 )
               ],
