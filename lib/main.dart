@@ -41,17 +41,25 @@ class HomePage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.end,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
-                        'Hotel Name',
-                        style: TextStyle(fontSize: 25, color: Colors.yellow, fontWeight: FontWeight.w800),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                      Text(
-                        'Location',
-                        style: TextStyle(fontSize: 20, color: Colors.yellow, fontWeight: FontWeight.w800),
-                      ),
+                      Container(
+                        height: 50,
+                        width: double.infinity,
+                        child: Column(
+                          children: [
+                            Text(
+                              'Hotel Name',
+                              style: TextStyle(fontSize: 25, color: Colors.yellow, fontWeight: FontWeight.w800),
+                            ),
+                            SizedBox(
+                              height: 5,
+                            ),
+                            Text(
+                              'Location',
+                              style: TextStyle(fontSize: 20, color: Colors.yellow, fontWeight: FontWeight.w800),
+                            ),
+                          ],
+                        ),
+                      )
                     ],
                   ),
                 )
