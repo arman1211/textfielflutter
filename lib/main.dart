@@ -6,6 +6,7 @@ void main() {
 }
 
 class HomePage extends StatelessWidget {
+  String dollarsign = r"$";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,7 +29,7 @@ class HomePage extends StatelessWidget {
                       width: 100,
                     ),
                     Text(
-                      '1200',
+                      '1200' + dollarsign,
                       style: TextStyle(fontSize: 25, color: Colors.black, fontWeight: FontWeight.w800),
                     )
                   ],
